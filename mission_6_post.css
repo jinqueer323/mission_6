@@ -1,0 +1,285 @@
+/*
+タグ .属性{
+・フォント（色、フォントの種類、サイズ、太さ）
+・背景（色、）
+・display
+・position
+・margin
+・text-align
+・padding（top, bottom, right, left）
+・width
+・height
+・境界線(border, 上下左右、丸める、）
+}
+*/
+*{
+  zoom:1;
+  font-family: 'Yu Gothic'; /*フォントは游ゴシックで統一*/
+  margin: 0;
+  padding: 0;
+}
+body{  
+
+  color: #333;
+  background-color:mintcream;
+  position: relative;
+  margin: 0;  
+  text-align: center;
+  padding: 0;
+}
+
+header{
+
+  margin: 0;
+  text-align:left;
+  background-color: aliceblue;
+  height: 300px;
+  background-position: 50% 50%;
+}
+nav{  
+  font-size:30px;
+}
+nav ul{  
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 240px;
+  padding-bottom: 10px;
+}
+nav ul li{
+  display: inline-block; /*左詰め配置*/
+  padding: 10px;
+} 
+nav ul li.li_home{
+  background-color: lightpink;
+  border-radius:5px;
+}
+nav ul li.li_post{
+  background-color: peachpuff;
+  border-radius:5px;
+}
+nav ul li.li_diary{
+  background-color: lemonchiffon;
+  border-radius:5px;
+}
+nav ul li.li_album{
+  background-color: lightskyblue;
+  border-radius:5px;
+}
+nav ul li.li_mypage{
+  background-color: paleturquoise;
+  border-radius:5px;
+}
+nav ul li.li_setting{
+  background-color: thistle;
+  border-radius:5px;
+}
+nav ul li a{
+  text-decoration: none; /*各項目の下線消す*/
+  color: #667788; /*文字色をグレーっぽい色に*/
+}
+
+nav ul li a:hover{
+  color:cornflowerblue; /*hoverの時色青に*/
+}
+
+div.form_all{
+ float: left;
+ padding-top:0;
+}
+
+/*セレクトとカレンダー*/
+div.calender_all{  
+  background-color: white;
+  display: block;   
+  float: left;
+  margin: 0; 
+  width: 500px;
+  height: 500px;
+}
+div.selectbox{
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 400px;
+  height: 350px;
+}
+select{
+  width: 100px;
+  height: 40px;
+}
+option{
+  font-size: 25px;
+}
+
+input.select_ym{   
+  color: white;
+  font-weight: bold;
+  background-color: skyblue;
+  text-align: center; 
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 8px
+}
+
+p.years{
+  display: inline-block;
+  font-size: 20px;
+  border-bottom: 2px solid aliceblue;
+}
+p.months{
+  display: inline-block;
+  font-size: 20px;
+  border-bottom: 2px solid aliceblue;
+}
+
+/*カレンダー部分*/
+table.calender{
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid lightsteelblue;
+}
+table td{
+  text-align: center;
+  padding: 5px;
+  width: 250px;
+}
+td.week{
+  display: inlne-block;
+  text-align: center;
+  border-bottom: 2px solid deepskyblue;
+}
+td.no-day{
+  text-align: center;
+}
+td.day{
+  text-align: center;
+}
+td.day input.day_button{
+  background-color: white;
+  border-style: none;
+
+}
+
+/*投稿*/
+div.post_all{ 
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 300px;
+  left: 450px;  
+  margin: 0;
+  padding: 20px;
+  width: 1000px;
+  height: 1000px;
+}
+
+form dl dt{
+  font-size: 25px;
+  text-align:center;
+}
+
+div.time{
+  font-size: 30px;
+  display: inline-block; /*ボーダーの長さ調整するため入れた*/
+  margin-bottom: 10px;
+  border-bottom: 2px solid lightblue;
+}
+div input.post_date{
+  background-color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  border: none;
+}
+
+input.username_post{
+  display: inline-block; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;/*文字が左詰めで入力されるように*/
+  width: 400px;
+  height: 40px;
+  border: 2px solid lightblue;
+}
+
+
+div.weather{
+  height: 200px;
+}
+div.weather dd{
+  font-size: 20px;
+}
+input[type="radio"]{
+  /*display: none;*/
+  padding:10px;
+  width: 20px;
+  height: 20px;
+}  
+label{
+  display: inline-block;
+}
+label img{
+  margin: 3px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+}
+input[type="radio"]:checked + label img{
+  background-color: skyblue;
+}
+
+input[type="radio"]:hover + label img{
+  background-color:skyblue;
+}
+
+
+
+
+label.picture{  
+  background-color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+  width:400px;
+  height: 30px;
+  border: none;
+}
+
+label input.picture{  
+  margin-bottom: 20px;
+}
+
+textarea.comment{
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: left;/*文字が左詰めで入力されるように*/
+  width: 800px;
+  height: 450px;
+  border: 2px solid lightblue;
+}
+
+button.post_button{
+  color: white;
+  font-weight: bold;
+  background-color: skyblue;
+  display: inline-block;
+  position: abusolute; 
+  text-align: center; 
+  position: abusolute; 
+  padding: 10px 10px;
+  top: 50%;
+  left: 50%;  
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 8px
+}
+

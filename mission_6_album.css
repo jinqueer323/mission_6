@@ -1,0 +1,128 @@
+/*
+タグ .属性{
+・フォント（色、フォントの種類、サイズ、太さ）
+・背景（色、）
+・display
+・position
+・margin
+・text-align
+・padding（top, bottom, right, left）
+・width
+・height
+・境界線(border, 上下左右、丸める、）
+}
+*/
+*{
+  font-family: 'Yu Gothic'; /*フォントは游ゴシックで統一*/
+  margin: 0;
+  padding: 0;
+}
+body{  
+  color: #333;
+  background-color:mintcream;
+  position: relative;
+  margin: 0;  
+  text-align: center;
+  padding: 0;
+}
+
+header{
+  margin: 0;
+  text-align:left;
+  background-color: aliceblue;
+  height: 300px;
+  background-position: 50% 50%;
+}
+nav{  
+  font-size: 30px;
+}
+nav ul{  
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 240px;
+  padding-bottom: 10px;
+}
+nav ul li{
+  display: inline-block; /*左詰め配置*/
+  padding: 10px;
+} 
+nav ul li.li_home{
+  background-color: lightpink;
+  border-radius:5px;
+}
+nav ul li.li_post{
+  background-color: peachpuff;
+  border-radius:5px;
+}
+nav ul li.li_diary{
+  background-color: lemonchiffon;
+  border-radius:5px;
+}
+nav ul li.li_album{
+  background-color: lightskyblue;
+  border-radius:5px;
+}
+nav ul li.li_mypage{
+  background-color: paleturquoise;
+  border-radius:5px;
+}
+nav ul li.li_setting{
+  background-color: thistle;
+  border-radius:5px;
+}
+nav ul li a{
+  text-decoration: none; /*各項目の下線消す*/
+  color: #667788; /*文字色をグレーっぽい色に*/
+}
+
+nav ul li a:hover{
+  color:cornflowerblue; /*hoverの時色青に*/
+}
+
+/*表示部分*/
+div.all{ 
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  width: 1820px;
+  height: 2000px;
+}
+
+table.day_and_image{
+  table-layout: fixed;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  width: 1820px;
+  height: 1700px;
+  border: 2px solid lightsteelblue;
+}
+table td{
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+p.date_album{
+  color: #667788;
+  font-family: 'Yu Gothic';
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  display: inline-block; /*ボーダーの長さ調整するため入れた*/
+  margin-bottom: 10px;
+  border-bottom: 2px solid lightblue;
+}
+
+div.all img.image_album{
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  height: 400px;
+}

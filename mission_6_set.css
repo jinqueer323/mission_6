@@ -1,0 +1,179 @@
+/*
+タグ .属性{
+・フォント（色、フォントの種類、サイズ、太さ）
+・背景（色、）
+・display
+・position
+・margin
+・text-align
+・padding（top, bottom, right, left）
+・width
+・height
+・境界線(border, 上下左右、丸める、）
+}
+*/
+*{
+  zoom:1;
+  font-family: 'Yu Gothic'; /*フォントは游ゴシックで統一*/
+  margin: 0;
+  padding: 0;
+}
+body{  
+
+  color: #333;
+  background-color:mintcream;
+  position: relative;
+  margin: 0;  
+  text-align: center;
+  padding: 0;
+}
+
+header{
+
+  margin: 0;
+  text-align:left;
+  background-color: aliceblue;
+  height: 300px;
+  background-position: 50% 50%;
+}
+nav{  
+  font-size:30px;
+}
+nav ul{  
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 240px;
+  padding-bottom: 10px;
+}
+nav ul li{
+  display: inline-block; /*左詰め配置*/
+  padding: 10px;
+} 
+nav ul li.li_home{
+  background-color: lightpink;
+  border-radius:5px;
+}
+nav ul li.li_post{
+  background-color: peachpuff;
+  border-radius:5px;
+}
+nav ul li.li_diary{
+  background-color: lemonchiffon;
+  border-radius:5px;
+}
+nav ul li.li_album{
+  background-color: lightskyblue;
+  border-radius:5px;
+}
+nav ul li.li_mypage{
+  background-color: paleturquoise;
+  border-radius:5px;
+}
+nav ul li.li_setting{
+  background-color: thistle;
+  border-radius:5px;
+}
+nav ul li a{
+  text-decoration: none; /*各項目の下線消す*/
+  color: #667788; /*文字色をグレーっぽい色に*/
+}
+
+nav ul li a:hover{
+  color:cornflowerblue; /*hoverの時色青に*/
+}
+
+div.all{
+  background-color: white;
+  display: inline-block;   
+  float: center;
+  margin: 0; 
+  padding:20px;
+  width: 1000px;
+  height: 1300px;
+}
+
+h3{
+  color:slategray;
+  font-size: 27px;
+  text-align: center;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+form.pass_edit{
+  display: inline-block;   
+  float: center;
+  width:500px;
+  height: 350px;
+  border: 4px solid lightblue;
+  border-radius: 5px;
+  
+}
+
+form.nickname_edit{
+  display: inline-block;   
+  float: center;
+  width:500px;
+  height: 450px;
+  border: 4px solid lightblue;
+  border-radius: 5px;
+  
+}
+
+p{
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+  padding-top: 20px;
+  border-bottom: 4px solid lightsteelblue;
+}
+input{
+  display: inline-block; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;/*文字が左詰めで入力されるように*/
+  width: 400px;
+  height: 40px;
+  border: 2px solid lightsteelblue;
+}
+button{
+  color: white;
+  font-weight: bold;
+  background-color: skyblue;
+  display: inline-block;
+  position: abusolute; 
+  margin-top: 20px;
+  text-align: center; 
+  position: abusolute; 
+  padding: 10px;
+  top: 50%;
+  left: 50%;  
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 8px
+}
+
+div.hyouji{ 
+  display:inline-block;
+  text-align: center;
+  padding-top: 40px;
+  width: 500px;
+  height: 120px;
+}
+p.edit_hyouji{
+  color: #333;
+  font-size: 24px;
+  background-color:rgb(188,216,233);
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  padding-top: 40px;
+  border: 4px solid rgb(188,216,233);
+  border-radius: 8px;
+
+}

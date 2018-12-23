@@ -1,0 +1,135 @@
+/*
+タグ .属性{
+・フォント（色、フォントの種類、サイズ、太さ）
+・背景（色、）
+・display
+・position
+・margin
+・text-align
+・padding（top, bottom, right, left）
+・width
+・height
+・境界線(border, 上下左右、丸める、）
+}
+*/
+*{
+  zoom:1;
+  font-family: 'Yu Gothic'; /*フォントは游ゴシックで統一*/
+  margin: 0;
+  padding: 0;
+}
+body{  
+
+  color: #333;
+  background-color:mintcream;
+  position: relative;
+  margin: 0;  
+  text-align: center;
+  padding: 0;
+}
+
+header{
+
+  margin: 0;
+  text-align:left;
+  background-color: aliceblue;
+  height: 300px;
+  background-position: 50% 50%;
+}
+nav{  
+  font-size:30px;
+}
+nav ul{  
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 240px;
+  padding-bottom: 10px;
+}
+nav ul li{
+  display: inline-block; /*左詰め配置*/
+  padding: 10px;
+} 
+nav ul li.li_home{
+  background-color: lightpink;
+  border-radius:5px;
+}
+nav ul li.li_post{
+  background-color: peachpuff;
+  border-radius:5px;
+}
+nav ul li.li_diary{
+  background-color: lemonchiffon;
+  border-radius:5px;
+}
+nav ul li.li_album{
+  background-color: lightskyblue;
+  border-radius:5px;
+}
+nav ul li.li_mypage{
+  background-color: paleturquoise;
+  border-radius:5px;
+}
+nav ul li.li_setting{
+  background-color: thistle;
+  border-radius:5px;
+}
+nav ul li a{
+  text-decoration: none; /*各項目の下線消す*/
+  color: #667788; /*文字色をグレーっぽい色に*/
+}
+
+nav ul li a:hover{
+  color:cornflowerblue; /*hoverの時色青に*/
+}
+
+div.all{
+  background-color: white;
+  display: inline-block;   
+  float: center;
+  margin: 0; 
+  width: 1000px;
+  height: 500px;
+}
+
+h3{
+  font-size:24px;
+  color:slategray;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+div.user_info{
+  display: inline-block;   
+  float: center;
+  width:500px;
+  height: 300px;
+  border: 4px solid lightblue;
+  border-radius: 3px;
+}
+
+div.user_info p.user_info_p1{
+  font-size: 20px;
+  color: #696969;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  border-bottom: 5px solid lightsteelblue;
+
+}
+
+div.user_info p.user_info_p2{
+  font-size: 30px;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+a.logoutlink{
+  font-size: 20px;
+  display: block;
+  float: center;
+  padding: 20px; 
+}

@@ -1,0 +1,106 @@
+*{
+  zoom: 1;
+  font-family: 'Yu Gothic'; /*フォントは游ゴシックで統一*/
+}
+
+body{
+  background-color: white;
+  margin: 0; /*外側の余白なし*/
+  color: #333;  /*文字色黒に*/  
+  font-family: 'Yu Gothic';
+  font-size: 25px;
+}
+
+header{
+
+  margin: 0;
+  text-align:left;
+  background-color: aliceblue;
+  height: 300px;
+  background-position: 50% 50%;
+}
+nav{  
+  font-size:30px;
+}
+nav ul{  
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding-left: 10px;
+  padding-top: 240px;
+  padding-bottom: 10px;
+}
+nav ul li{
+  display: inline-block; /*左詰め配置*/
+  padding: 10px;  /*上下左右5pxづつ余白*/
+} 
+nav ul li.li_home{
+  background-color: lightpink;
+  border-radius:5px;
+}
+nav ul li.li_post{
+  background-color: peachpuff;
+  border-radius:5px;
+}
+nav ul li.li_diary{
+  background-color: lemonchiffon;
+  border-radius:5px;
+}
+nav ul li.li_album{
+  background-color: lightskyblue;
+  border-radius:5px;
+}
+nav ul li.li_mypage{
+  background-color: paleturquoise;
+  border-radius:5px;
+}
+nav ul li.li_setting{
+  background-color: thistle;
+  border-radius:5px;
+}
+
+nav ul li a{
+  text-decoration: none; /*各項目の下線消す*/
+  color: #667788; /*文字色をグレーっぽい色に*/
+}
+
+nav ul li a:hover{
+  color:cornflowerblue; /*hoverの時色青に*/
+}
+
+div.notheader{
+  /*background-color: skyblue;*/
+  background-image: url("image/album4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 1100px;
+}
+
+div.hyoushi{
+  background: rbga(255,255,255,0.5);
+  display: inline-block;
+  position: absolute;
+  top: 450px;
+  left: 718px;  
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+  width: 500px;
+  height: 150px;
+}
+.hyoushi ul{
+  display: inline-block;
+  background: rbga(255,255,255,0.5);
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  list-style: none;
+}
+.hyoushi ul li{
+   color: rgb(86, 120, 142);
+   font-family: 'Garamond';
+   font-size: 50px;
+   font-weight: bold;
+   padding-top: 10px;
+}
+
